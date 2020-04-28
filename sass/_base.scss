@@ -1,0 +1,53 @@
+
+:root {
+
+    --font-1-light:'Oswald-Light', sans-serif;
+    --font-1-medium:'Oswald-Medium', sans-serif;
+    --font-2-black:'Raleway-Black', sans-serif;
+    --font-2-bold:'Raleway-Bold', sans-serif;
+    --font-2-light: 'Raleway-Light', sans-serif;
+    --font-2-regular: 'Raleway-Regular', sans-serif;
+
+    --color-light: #ffffff;
+    --color-dark:#333333;
+    --color-light-2:#f9f6e8;
+    --color-blue-light:#00aeef;
+
+    --shadow-dark:0px 4px 45px 9px rgba(0,0,0,.35);
+    --shadow-light: 0 2px 14px 1px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-1-light);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    min-height: 100vh;
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
