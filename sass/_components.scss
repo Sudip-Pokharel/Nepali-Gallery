@@ -26,12 +26,12 @@
 
 ///////////////////////////////////////////////////////
 // HEADER 
-
 .header {
     ul {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0 0.5rem;
         li {
             &:not(:last-child) {
                 padding-right: 2.4rem;
@@ -142,6 +142,7 @@
     &-filter {
         display: flex;
         align-items: center;
+        justify-content: center;
         h4 {
             color: var(--color-light);
             font-size: 2.4rem;
@@ -159,14 +160,14 @@
     &-list {
         padding-top: 1.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         .item {
             background-color: var(--color-light-2);
             padding: 2.3rem 2.2rem 1.5rem;
             max-width: 27.6rem;
-            margin-top: 2.3rem;
-         
+            margin: 2.3rem 1.2rem;
+            
             &__buy-now {
                 position: absolute;
                 bottom: -4.75rem;
@@ -202,6 +203,67 @@
                 font-family: var(--font-2-black);
                 color: var(--color-dark);
                 margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////////////////////
+// FOOTER
+.footer {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-links {
+        display: flex;
+        align-items: center;
+        li {
+            position: relative;
+            color: var(--color-light-2);
+            font-size: 2rem;
+            a {
+                color: currentColor;
+                font-size: inherit;
+            }
+            &:not(:last-child) {
+                padding-right: 4.4rem;
+                &::before {
+                    content: '|';
+                    position: absolute;
+                    color: inherit;
+                    left: calc(100% - 2.2rem);
+                }
+            }
+        }
+    }
+    &-media {
+        display: flex;
+        align-items: center;
+        li {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            background-color: var(--color-dark);
+            box-shadow: var(--shadow-light-1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.6rem;
+            &:not(:last-child) {
+                margin-right: 1.6rem;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                    fill: var(--color-light-2);
+                    width: 1.9rem;
+                    height: 1.9rem;
+                }
             }
         }
     }
